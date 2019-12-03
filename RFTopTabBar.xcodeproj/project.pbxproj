@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E4F9A1C239016D9004FB651 /* RFTabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4F9A1B239016D9004FB651 /* RFTabItem.swift */; };
+		8E5DEC2D238F0FFE00DA1F9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5DEC2C238F0FFE00DA1F9B /* AppDelegate.swift */; };
+		8E5DEC2F238F0FFE00DA1F9B /* RFTabbedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5DEC2E238F0FFE00DA1F9B /* RFTabbedViewController.swift */; };
+		8E5DEC32238F0FFE00DA1F9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E5DEC30238F0FFE00DA1F9B /* Main.storyboard */; };
+		8E5DEC34238F100100DA1F9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E5DEC33238F100100DA1F9B /* Assets.xcassets */; };
+		8E5DEC37238F100100DA1F9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E5DEC35238F100100DA1F9B /* LaunchScreen.storyboard */; };
+		8E5DEC42238F100100DA1F9B /* RFTopTabBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5DEC41238F100100DA1F9B /* RFTopTabBarTests.swift */; };
+		8E5DEC4D238F100100DA1F9B /* RFTopTabBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5DEC4C238F100100DA1F9B /* RFTopTabBarUITests.swift */; };
+		8E5DEC5B238F102B00DA1F9B /* RFTopTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5DEC5A238F102B00DA1F9B /* RFTopTabBarView.swift */; };
+		8E5DEC5D238F10BF00DA1F9B /* RFTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5DEC5C238F10BF00DA1F9B /* RFTabView.swift */; };
+		8EA8D94823907E0B00380C75 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA8D94723907E0B00380C75 /* ExampleViewController.swift */; };
+		8ED42BFF239446B400AEC83F /* RFTabBarUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED42BFE239446B400AEC83F /* RFTabBarUI.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8E5DEC3E238F100100DA1F9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E5DEC21238F0FFE00DA1F9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E5DEC28238F0FFE00DA1F9B;
+			remoteInfo = RFTopTabBar;
+		};
+		8E5DEC49238F100100DA1F9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E5DEC21238F0FFE00DA1F9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E5DEC28238F0FFE00DA1F9B;
+			remoteInfo = RFTopTabBar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8E4F9A1B239016D9004FB651 /* RFTabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RFTabItem.swift; sourceTree = "<group>"; };
+		8E5DEC29238F0FFE00DA1F9B /* RFTopTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RFTopTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E5DEC2C238F0FFE00DA1F9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8E5DEC2E238F0FFE00DA1F9B /* RFTabbedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RFTabbedViewController.swift; sourceTree = "<group>"; };
+		8E5DEC31238F0FFE00DA1F9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8E5DEC33238F100100DA1F9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E5DEC36238F100100DA1F9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8E5DEC38238F100100DA1F9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E5DEC3D238F100100DA1F9B /* RFTopTabBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RFTopTabBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E5DEC41238F100100DA1F9B /* RFTopTabBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RFTopTabBarTests.swift; sourceTree = "<group>"; };
+		8E5DEC43238F100100DA1F9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E5DEC48238F100100DA1F9B /* RFTopTabBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RFTopTabBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E5DEC4C238F100100DA1F9B /* RFTopTabBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RFTopTabBarUITests.swift; sourceTree = "<group>"; };
+		8E5DEC4E238F100100DA1F9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E5DEC5A238F102B00DA1F9B /* RFTopTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RFTopTabBarView.swift; sourceTree = "<group>"; };
+		8E5DEC5C238F10BF00DA1F9B /* RFTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RFTabView.swift; sourceTree = "<group>"; };
+		8EA8D94723907E0B00380C75 /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
+		8ED42BFE239446B400AEC83F /* RFTabBarUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RFTabBarUI.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E5DEC26238F0FFE00DA1F9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E5DEC3A238F100100DA1F9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E5DEC45238F100100DA1F9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E5DEC20238F0FFE00DA1F9B = {
+			isa = PBXGroup;
+			children = (
+				8E5DEC2B238F0FFE00DA1F9B /* RFTopTabBar */,
+				8E5DEC40238F100100DA1F9B /* RFTopTabBarTests */,
+				8E5DEC4B238F100100DA1F9B /* RFTopTabBarUITests */,
+				8E5DEC2A238F0FFE00DA1F9B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E5DEC2A238F0FFE00DA1F9B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E5DEC29238F0FFE00DA1F9B /* RFTopTabBar.app */,
+				8E5DEC3D238F100100DA1F9B /* RFTopTabBarTests.xctest */,
+				8E5DEC48238F100100DA1F9B /* RFTopTabBarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E5DEC2B238F0FFE00DA1F9B /* RFTopTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				8ED42BFD2394454900AEC83F /* Models */,
+				8ED42BFB2394452900AEC83F /* Views */,
+				8ED42BFC2394453B00AEC83F /* Controllers */,
+				8EA8D94923907ECD00380C75 /* Example */,
+				8E5DEC2C238F0FFE00DA1F9B /* AppDelegate.swift */,
+				8E5DEC33238F100100DA1F9B /* Assets.xcassets */,
+				8E5DEC35238F100100DA1F9B /* LaunchScreen.storyboard */,
+				8E5DEC38238F100100DA1F9B /* Info.plist */,
+			);
+			path = RFTopTabBar;
+			sourceTree = "<group>";
+		};
+		8E5DEC40238F100100DA1F9B /* RFTopTabBarTests */ = {
+			isa = PBXGroup;
+			children = (
+				8E5DEC41238F100100DA1F9B /* RFTopTabBarTests.swift */,
+				8E5DEC43238F100100DA1F9B /* Info.plist */,
+			);
+			path = RFTopTabBarTests;
+			sourceTree = "<group>";
+		};
+		8E5DEC4B238F100100DA1F9B /* RFTopTabBarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8E5DEC4C238F100100DA1F9B /* RFTopTabBarUITests.swift */,
+				8E5DEC4E238F100100DA1F9B /* Info.plist */,
+			);
+			path = RFTopTabBarUITests;
+			sourceTree = "<group>";
+		};
+		8EA8D94923907ECD00380C75 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				8EA8D94723907E0B00380C75 /* ExampleViewController.swift */,
+				8E5DEC30238F0FFE00DA1F9B /* Main.storyboard */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		8ED42BFB2394452900AEC83F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8E5DEC5A238F102B00DA1F9B /* RFTopTabBarView.swift */,
+				8E5DEC5C238F10BF00DA1F9B /* RFTabView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8ED42BFC2394453B00AEC83F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8E5DEC2E238F0FFE00DA1F9B /* RFTabbedViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8ED42BFD2394454900AEC83F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8E4F9A1B239016D9004FB651 /* RFTabItem.swift */,
+				8ED42BFE239446B400AEC83F /* RFTabBarUI.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E5DEC28238F0FFE00DA1F9B /* RFTopTabBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E5DEC51238F100100DA1F9B /* Build configuration list for PBXNativeTarget "RFTopTabBar" */;
+			buildPhases = (
+				8E5DEC25238F0FFE00DA1F9B /* Sources */,
+				8E5DEC26238F0FFE00DA1F9B /* Frameworks */,
+				8E5DEC27238F0FFE00DA1F9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RFTopTabBar;
+			productName = RFTopTabBar;
+			productReference = 8E5DEC29238F0FFE00DA1F9B /* RFTopTabBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8E5DEC3C238F100100DA1F9B /* RFTopTabBarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E5DEC54238F100100DA1F9B /* Build configuration list for PBXNativeTarget "RFTopTabBarTests" */;
+			buildPhases = (
+				8E5DEC39238F100100DA1F9B /* Sources */,
+				8E5DEC3A238F100100DA1F9B /* Frameworks */,
+				8E5DEC3B238F100100DA1F9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E5DEC3F238F100100DA1F9B /* PBXTargetDependency */,
+			);
+			name = RFTopTabBarTests;
+			productName = RFTopTabBarTests;
+			productReference = 8E5DEC3D238F100100DA1F9B /* RFTopTabBarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8E5DEC47238F100100DA1F9B /* RFTopTabBarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E5DEC57238F100100DA1F9B /* Build configuration list for PBXNativeTarget "RFTopTabBarUITests" */;
+			buildPhases = (
+				8E5DEC44238F100100DA1F9B /* Sources */,
+				8E5DEC45238F100100DA1F9B /* Frameworks */,
+				8E5DEC46238F100100DA1F9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E5DEC4A238F100100DA1F9B /* PBXTargetDependency */,
+			);
+			name = RFTopTabBarUITests;
+			productName = RFTopTabBarUITests;
+			productReference = 8E5DEC48238F100100DA1F9B /* RFTopTabBarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E5DEC21238F0FFE00DA1F9B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = RF;
+				TargetAttributes = {
+					8E5DEC28238F0FFE00DA1F9B = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					8E5DEC3C238F100100DA1F9B = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 8E5DEC28238F0FFE00DA1F9B;
+					};
+					8E5DEC47238F100100DA1F9B = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 8E5DEC28238F0FFE00DA1F9B;
+					};
+				};
+			};
+			buildConfigurationList = 8E5DEC24238F0FFE00DA1F9B /* Build configuration list for PBXProject "RFTopTabBar" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8E5DEC20238F0FFE00DA1F9B;
+			productRefGroup = 8E5DEC2A238F0FFE00DA1F9B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E5DEC28238F0FFE00DA1F9B /* RFTopTabBar */,
+				8E5DEC3C238F100100DA1F9B /* RFTopTabBarTests */,
+				8E5DEC47238F100100DA1F9B /* RFTopTabBarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E5DEC27238F0FFE00DA1F9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E5DEC37238F100100DA1F9B /* LaunchScreen.storyboard in Resources */,
+				8E5DEC34238F100100DA1F9B /* Assets.xcassets in Resources */,
+				8E5DEC32238F0FFE00DA1F9B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E5DEC3B238F100100DA1F9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E5DEC46238F100100DA1F9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E5DEC25238F0FFE00DA1F9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E5DEC2F238F0FFE00DA1F9B /* RFTabbedViewController.swift in Sources */,
+				8ED42BFF239446B400AEC83F /* RFTabBarUI.swift in Sources */,
+				8E5DEC5D238F10BF00DA1F9B /* RFTabView.swift in Sources */,
+				8E5DEC2D238F0FFE00DA1F9B /* AppDelegate.swift in Sources */,
+				8E4F9A1C239016D9004FB651 /* RFTabItem.swift in Sources */,
+				8E5DEC5B238F102B00DA1F9B /* RFTopTabBarView.swift in Sources */,
+				8EA8D94823907E0B00380C75 /* ExampleViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E5DEC39238F100100DA1F9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E5DEC42238F100100DA1F9B /* RFTopTabBarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E5DEC44238F100100DA1F9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E5DEC4D238F100100DA1F9B /* RFTopTabBarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8E5DEC3F238F100100DA1F9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E5DEC28238F0FFE00DA1F9B /* RFTopTabBar */;
+			targetProxy = 8E5DEC3E238F100100DA1F9B /* PBXContainerItemProxy */;
+		};
+		8E5DEC4A238F100100DA1F9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E5DEC28238F0FFE00DA1F9B /* RFTopTabBar */;
+			targetProxy = 8E5DEC49238F100100DA1F9B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8E5DEC30238F0FFE00DA1F9B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E5DEC31238F0FFE00DA1F9B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8E5DEC35238F100100DA1F9B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E5DEC36238F100100DA1F9B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E5DEC4F238F100100DA1F9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8E5DEC50238F100100DA1F9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E5DEC52238F100100DA1F9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F27N7FDXX;
+				INFOPLIST_FILE = RFTopTabBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.rf.RFTopTabBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8E5DEC53238F100100DA1F9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F27N7FDXX;
+				INFOPLIST_FILE = RFTopTabBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.rf.RFTopTabBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8E5DEC55238F100100DA1F9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F27N7FDXX;
+				INFOPLIST_FILE = RFTopTabBarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.rf.RFTopTabBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RFTopTabBar.app/RFTopTabBar";
+			};
+			name = Debug;
+		};
+		8E5DEC56238F100100DA1F9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F27N7FDXX;
+				INFOPLIST_FILE = RFTopTabBarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.rf.RFTopTabBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RFTopTabBar.app/RFTopTabBar";
+			};
+			name = Release;
+		};
+		8E5DEC58238F100100DA1F9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F27N7FDXX;
+				INFOPLIST_FILE = RFTopTabBarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.rf.RFTopTabBarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RFTopTabBar;
+			};
+			name = Debug;
+		};
+		8E5DEC59238F100100DA1F9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F27N7FDXX;
+				INFOPLIST_FILE = RFTopTabBarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.rf.RFTopTabBarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RFTopTabBar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E5DEC24238F0FFE00DA1F9B /* Build configuration list for PBXProject "RFTopTabBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E5DEC4F238F100100DA1F9B /* Debug */,
+				8E5DEC50238F100100DA1F9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E5DEC51238F100100DA1F9B /* Build configuration list for PBXNativeTarget "RFTopTabBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E5DEC52238F100100DA1F9B /* Debug */,
+				8E5DEC53238F100100DA1F9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E5DEC54238F100100DA1F9B /* Build configuration list for PBXNativeTarget "RFTopTabBarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E5DEC55238F100100DA1F9B /* Debug */,
+				8E5DEC56238F100100DA1F9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E5DEC57238F100100DA1F9B /* Build configuration list for PBXNativeTarget "RFTopTabBarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E5DEC58238F100100DA1F9B /* Debug */,
+				8E5DEC59238F100100DA1F9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E5DEC21238F0FFE00DA1F9B /* Project object */;
+}
