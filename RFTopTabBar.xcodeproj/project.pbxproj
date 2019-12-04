@@ -87,6 +87,7 @@
 		8E5DEC20238F0FFE00DA1F9B = {
 			isa = PBXGroup;
 			children = (
+				8E7545AD2397C4E5000AC45E /* Source */,
 				8E5DEC2B238F0FFE00DA1F9B /* RFTopTabBar */,
 				8E5DEC40238F100100DA1F9B /* RFTopTabBarTests */,
 				8E5DEC4B238F100100DA1F9B /* RFTopTabBarUITests */,
@@ -107,9 +108,6 @@
 		8E5DEC2B238F0FFE00DA1F9B /* RFTopTabBar */ = {
 			isa = PBXGroup;
 			children = (
-				8ED42BFD2394454900AEC83F /* Models */,
-				8ED42BFB2394452900AEC83F /* Views */,
-				8ED42BFC2394453B00AEC83F /* Controllers */,
 				8EA8D94923907ECD00380C75 /* Example */,
 				8E5DEC2C238F0FFE00DA1F9B /* AppDelegate.swift */,
 				8E5DEC33238F100100DA1F9B /* Assets.xcassets */,
@@ -135,6 +133,16 @@
 				8E5DEC4E238F100100DA1F9B /* Info.plist */,
 			);
 			path = RFTopTabBarUITests;
+			sourceTree = "<group>";
+		};
+		8E7545AD2397C4E5000AC45E /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				8ED42BFD2394454900AEC83F /* Models */,
+				8ED42BFB2394452900AEC83F /* Views */,
+				8ED42BFC2394453B00AEC83F /* Controllers */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 		8EA8D94923907ECD00380C75 /* Example */ = {
