@@ -24,13 +24,13 @@ class RFTopTabBarView: UIView {
     
     weak var delegate: TabTapProtocol?
     
-    func add(iconsSelected: [UIImage], iconsUnselected: [UIImage], titles: [String]) {
+    final func add(iconsSelected: [UIImage] = [], iconsUnselected: [UIImage] = [], titles: [String]) {
         self.iconsSelected = iconsSelected
         self.iconsUnselected = iconsUnselected
         self.titles = titles
     }
     
-    func configure(with model: RFTabBarUI) {
+    final func configure(with model: RFTabBarUI) {
         self.model = model
     }
     
@@ -44,11 +44,15 @@ class RFTopTabBarView: UIView {
         for tab in tabs {
             if index == 0 {
                 tab.titleColor = model.tabTitleSelectedColor
-                tab.iconImg = iconsSelected[index]
+                if iconsSelected.count > index {
+                    tab.iconImg = iconsSelected[index]
+                }
             }
             else {
                 tab.titleColor = model.tabTitleUnSelectedColor
-                tab.iconImg = iconsUnselected[index]
+                if iconsUnselected.count > index {
+                    tab.iconImg = iconsUnselected[index]
+                }
             }
             tab.titleString = titles[index]
             index += 1
@@ -108,6 +112,7 @@ class RFTopTabBarView: UIView {
             let tab = tabInit(width: commonWidth, index: index)
             let tap = UITapGestureRecognizer(target: self, action: #selector(handleTabTap(_:)))
             tab.addGestureRecognizer(tap)
+            tab.noIcons = iconsSelected.count == 0
             //tab.backgroundColor = .gray
             addSubview(tab)
             tabs.append(tab)
@@ -132,7 +137,9 @@ class RFTopTabBarView: UIView {
     @objc func handleTabTap(_ sender: UITapGestureRecognizer) {
         if let tab = sender.view as? RFTabView, let index = tabs.firstIndex(of: tab), let d = delegate {
             tab.titleColor = model.tabTitleSelectedColor
-            tab.iconImg = iconsSelected[index]
+            if iconsSelected.count > index {
+                tab.iconImg = iconsSelected[index]
+            }
             deselectAllTabs(except: tab)
             moveUnderlineView(to: tab)
             d.didTapTab(at: index)
@@ -144,7 +151,9 @@ class RFTopTabBarView: UIView {
         for t in tabs {
             if t != tab {
                 t.titleColor = model.tabTitleUnSelectedColor
-                t.iconImg = iconsUnselected[index]
+                if iconsUnselected.count > index {
+                    t.iconImg = iconsUnselected[index]
+                }
             }
             index += 1
         }

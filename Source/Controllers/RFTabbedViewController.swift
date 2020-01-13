@@ -85,8 +85,12 @@ class RFTabbedViewController: UIViewController, TabTapProtocol {
         var titles = [String]()
         
         for tab in tabsItems {
-            imagesSelected.append(tab.iconSelected)
-            imagesUnselected.append(tab.iconUnselected)
+            if let selected = tab.iconSelected {
+                imagesSelected.append(selected)
+            }
+            if let unselected = tab.iconUnselected {
+                imagesUnselected.append(unselected)
+            }
             titles.append(tab.title)
             vcsIDs.append(tab.vcID)
         }

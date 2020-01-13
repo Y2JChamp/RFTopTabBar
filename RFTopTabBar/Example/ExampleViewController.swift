@@ -11,14 +11,17 @@ import UIKit
 class ExampleViewController: RFTabbedViewController {
 
     override func viewDidLoad() {
-        super.viewDidLoad()
 
         // Configuration
         let tab1 = RFTabItem(iconSelected: UIImage(named: "selected")!, iconUnselected: UIImage(named: "unselected")!, title: "Prova1", vcID: "Prova1")
         let tab2 = RFTabItem(iconSelected: UIImage(named: "selected")!, iconUnselected: UIImage(named: "unselected")!, title: "Prova2", vcID: "Prova2")
         let tab3 = RFTabItem(iconSelected: UIImage(named: "selected")!, iconUnselected: UIImage(named: "unselected")!, title: "Prova3", vcID: "Prova3")
+//        let tab1 = RFTabItem(title: "Prova1", vcID: "Prova1")
+//        let tab2 = RFTabItem(title: "Prova2", vcID: "Prova2")
+//        let tab3 = RFTabItem(title: "Prova3", vcID: "Prova3")
         let tabs = [tab1, tab2, tab3, tab2]
         add(tabsItems: tabs)
+        super.viewDidLoad()
     }
     
 

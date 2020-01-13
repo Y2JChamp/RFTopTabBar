@@ -26,6 +26,8 @@ class RFTabView: UIView {
     
     var titleString: String?
     
+    var noIcons = false
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         setupUI()
@@ -41,9 +43,15 @@ class RFTabView: UIView {
     }
     
     private func addViews() {
-        let titleHeight = frame.size.height / 4
-        addTitleView(titleHeight: titleHeight)
-        addIconView(iconSize: titleHeight)
+        if noIcons {
+            let titleHeight = frame.size.height
+            addTitleView(titleHeight: titleHeight)
+        }
+        else {
+            let titleHeight = frame.size.height / 4
+            addTitleView(titleHeight: titleHeight)
+            addIconView(iconSize: titleHeight)
+        }
     }
     
     private func addTitleView(titleHeight: CGFloat) {
