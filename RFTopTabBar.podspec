@@ -3,7 +3,7 @@ Pod::Spec.new do |spec|
   spec.version       = "0.0.2"
   spec.summary       = "A customizable top tab bar for iOS written in Swift 5.0"
   spec.homepage      = "https://github.com/Y2JChamp/RFTopTabBar"
-  spec.license          = { :type => "MIT" }
+  spec.license          = "MIT"
   spec.author        = { "Raffaele Forgione" => "r.forgione@wakala.it" }
   spec.source        = { :git => "https://github.com/Y2JChamp/RFTopTabBar.git", :tag => "#{spec.version}" }
   spec.source_files  = "Source/**/*.swift"
