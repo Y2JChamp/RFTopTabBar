@@ -36,15 +36,16 @@ class RFTabView: UIView {
         }
     }
     
-    var noIcons = false
+    private var noIcons = false
     
     override func layoutSubviews() {
         super.layoutSubviews()
         redrawViews()
     }
     
-    override init(frame: CGRect) {
+    init(frame: CGRect, noIcons: Bool) {
         super.init(frame: frame)
+        self.noIcons = noIcons
         addViews()
     }
     
@@ -86,10 +87,16 @@ class RFTabView: UIView {
     }
     
     private func redrawViews() {
-        let titleHeight = frame.size.height / 4
-        title?.frame = CGRect(x: 2, y: frame.size.height - 2 - titleHeight, width: frame.size.width - 4, height: titleHeight)
-        let iconSize = titleHeight
-        icon?.frame = CGRect(x: (frame.size.width - iconSize) / 2, y: title!.frame.origin.y - 2 - iconSize, width: iconSize, height: iconSize)
+        if noIcons{
+            let titleHeight = frame.size.height
+            title?.frame = CGRect(x: 2, y: frame.size.height - 2 - titleHeight, width: frame.size.width - 4, height: titleHeight)
+        }
+        else {
+            let titleHeight = frame.size.height / 4
+            title?.frame = CGRect(x: 2, y: frame.size.height - 2 - titleHeight, width: frame.size.width - 4, height: titleHeight)
+            let iconSize = titleHeight
+            icon?.frame = CGRect(x: (frame.size.width - iconSize) / 2, y: title!.frame.origin.y - 2 - iconSize, width: iconSize, height: iconSize)
+        }
     }
     
 }

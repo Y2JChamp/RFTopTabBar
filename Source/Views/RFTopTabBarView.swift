@@ -81,7 +81,7 @@ class RFTopTabBarView: UIView {
     
     private func insertUnderLine() {
         if let width = tabs.first?.frame.size.width {
-            underlineView = UIView(frame: CGRect(x: 5, y: frame.size.height - 2, width: width - 10, height: model.tabUnderlineHeight))
+            underlineView = UIView(frame: CGRect(x: 5, y: frame.size.height - model.tabUnderlineHeight - model.tabUnderlineBottom, width: width - 10, height: model.tabUnderlineHeight))
             underlineView.backgroundColor = .blue
             addSubview(underlineView)
             configureUnderlineView(with: model)
@@ -115,7 +115,6 @@ class RFTopTabBarView: UIView {
             let tab = tabInit(width: commonWidth, index: index)
             let tap = UITapGestureRecognizer(target: self, action: #selector(handleTabTap(_:)))
             tab.addGestureRecognizer(tap)
-            tab.noIcons = iconsSelected.count == 0
             //tab.backgroundColor = .gray
             addSubview(tab)
             tabs.append(tab)
@@ -125,7 +124,7 @@ class RFTopTabBarView: UIView {
     private func tabInit(width: CGFloat, index: Int) -> RFTabView {
         let x = width * CGFloat(index)
         let y: CGFloat = 0
-        return RFTabView(frame: CGRect(x: x, y: y, width: width, height: frame.size.height))
+        return RFTabView(frame: CGRect(x: x, y: y, width: width, height: frame.size.height), noIcons: iconsSelected.count == 0)
     }
     
     private func redrawTabs() {
