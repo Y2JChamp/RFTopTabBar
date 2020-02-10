@@ -8,13 +8,13 @@
 
 import UIKit
 
-class RFTabItem {
+public class RFTabItem {
     private (set) var iconSelected: UIImage?
     private (set) var iconUnselected: UIImage?
     private (set) var title: String
     private (set) var vcID: String
     
-    init(iconSelected: UIImage? = nil, iconUnselected: UIImage? = nil, title: String, vcID: String) {
+    public init(iconSelected: UIImage? = nil, iconUnselected: UIImage? = nil, title: String, vcID: String) {
         self.iconSelected = iconSelected
         self.iconUnselected = iconUnselected
         self.title = title

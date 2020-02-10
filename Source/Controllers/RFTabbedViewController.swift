@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RFTabbedViewController: UIViewController, TabTapProtocol {
+open class RFTabbedViewController: UIViewController, TabTapProtocol {
 
     private lazy var tabView: RFTopTabBarView = {
         return RFTopTabBarView()
@@ -28,7 +28,7 @@ class RFTabbedViewController: UIViewController, TabTapProtocol {
     @IBInspectable var tabUnderlineColor: UIColor = .blue
     @IBInspectable var tabUnderlineHeight: CGFloat = 2
     
-    override func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
     }
@@ -110,6 +110,7 @@ class RFTabbedViewController: UIViewController, TabTapProtocol {
         if let vc = storyboard?.instantiateViewController(withIdentifier: name ?? "") {
             addChild(vc)
             vc.view.frame = view.frame
+            containerView.frame = view.frame
             containerView.addSubview(vc.view)
             presentedChildVC = vc
         }
