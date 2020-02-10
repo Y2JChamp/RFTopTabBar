@@ -27,6 +27,7 @@ open class RFTabbedViewController: UIViewController, TabTapProtocol {
     @IBInspectable var tabTitleUnSelectedColor: UIColor = .blue
     @IBInspectable var tabUnderlineColor: UIColor = .blue
     @IBInspectable var tabUnderlineHeight: CGFloat = 2
+    @IBInspectable var tabFont: UIFont = .systemFont(ofSize: 18)
     
     override open func viewDidLoad() {
         super.viewDidLoad()
@@ -45,7 +46,7 @@ open class RFTabbedViewController: UIViewController, TabTapProtocol {
     }
     
     private func subviewsModel() -> RFTabBarUI {
-        return RFTabBarUI(tabTitleSelectedColor: tabTitleSelectedColor, tabTitleUnSelectedColor: tabTitleUnSelectedColor, tabUnderlineColor: tabUnderlineColor, tabUnderlineHeight: tabUnderlineHeight)
+        return RFTabBarUI(tabTitleSelectedColor: tabTitleSelectedColor, tabTitleUnSelectedColor: tabTitleUnSelectedColor, tabUnderlineColor: tabUnderlineColor, tabUnderlineHeight: tabUnderlineHeight, tabFont: tabFont)
     }
     
     private func addSubViews() {

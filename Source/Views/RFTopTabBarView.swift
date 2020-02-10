@@ -42,6 +42,7 @@ class RFTopTabBarView: UIView {
     private func insertData() {
         var index = 0
         for tab in tabs {
+            tab.titleFont = model.tabFont
             if index == 0 {
                 tab.titleColor = model.tabTitleSelectedColor
                 if iconsSelected.count > index {

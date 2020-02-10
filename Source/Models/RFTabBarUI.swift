@@ -13,11 +13,13 @@ class RFTabBarUI {
     private (set) var tabTitleUnSelectedColor: UIColor
     private (set) var tabUnderlineColor: UIColor
     private (set) var tabUnderlineHeight: CGFloat
+    private (set) var tabFont: UIFont
     
-    init(tabTitleSelectedColor: UIColor, tabTitleUnSelectedColor: UIColor, tabUnderlineColor: UIColor, tabUnderlineHeight: CGFloat) {
+    init(tabTitleSelectedColor: UIColor, tabTitleUnSelectedColor: UIColor, tabUnderlineColor: UIColor, tabUnderlineHeight: CGFloat, tabFont: UIFont) {
         self.tabTitleSelectedColor = tabTitleSelectedColor
         self.tabTitleUnSelectedColor = tabTitleUnSelectedColor
         self.tabUnderlineColor = tabUnderlineColor
         self.tabUnderlineHeight = tabUnderlineHeight
+        self.tabFont = tabFont
     }
 }

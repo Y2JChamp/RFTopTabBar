@@ -24,13 +24,32 @@ class RFTabView: UIView {
         }
     }
     
-    var titleString: String?
+    var titleFont: UIFont? {
+       didSet {
+            title?.font = titleFont
+        }
+    }
+    
+    var titleString: String? {
+        didSet {
+            title?.text = titleString
+        }
+    }
     
     var noIcons = false
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        setupUI()
+        redrawViews()
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        addViews()
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
     }
     
     private func setupUI() {
@@ -56,7 +75,6 @@ class RFTabView: UIView {
     
     private func addTitleView(titleHeight: CGFloat) {
         title = UILabel(frame: CGRect(x: 2, y: frame.size.height - 2 - titleHeight, width: frame.size.width - 4, height: titleHeight))
-        title?.text = titleString
         title?.textAlignment = .center
         addSubview(title!)
     }
