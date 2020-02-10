@@ -18,16 +18,18 @@ class RFTopTabBarView: UIView {
     private var iconsSelected = [UIImage]()
     private var iconsUnselected = [UIImage]()
     private var titles = [String]()
+    private var fonts = [UIFont]()
     private var model: RFTabBarUI!
     
     private var underlineView: UIView!
     
     weak var delegate: TabTapProtocol?
     
-    final func add(iconsSelected: [UIImage] = [], iconsUnselected: [UIImage] = [], titles: [String]) {
+    final func add(iconsSelected: [UIImage] = [], iconsUnselected: [UIImage] = [], titles: [String], fonts: [UIFont]) {
         self.iconsSelected = iconsSelected
         self.iconsUnselected = iconsUnselected
         self.titles = titles
+        self.fonts = fonts
     }
     
     final func configure(with model: RFTabBarUI) {
@@ -42,7 +44,6 @@ class RFTopTabBarView: UIView {
     private func insertData() {
         var index = 0
         for tab in tabs {
-            tab.titleFont = model.tabFont
             if index == 0 {
                 tab.titleColor = model.tabTitleSelectedColor
                 if iconsSelected.count > index {
@@ -55,6 +56,7 @@ class RFTopTabBarView: UIView {
                     tab.iconImg = iconsUnselected[index]
                 }
             }
+            tab.titleFont = fonts[index]
             tab.titleString = titles[index]
             index += 1
         }

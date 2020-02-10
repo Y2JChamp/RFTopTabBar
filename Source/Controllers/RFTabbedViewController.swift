@@ -27,7 +27,6 @@ open class RFTabbedViewController: UIViewController, TabTapProtocol {
     @IBInspectable var tabTitleUnSelectedColor: UIColor = .blue
     @IBInspectable var tabUnderlineColor: UIColor = .blue
     @IBInspectable var tabUnderlineHeight: CGFloat = 2
-    @IBInspectable var tabFont: UIFont = .systemFont(ofSize: 18)
     
     override open func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +45,7 @@ open class RFTabbedViewController: UIViewController, TabTapProtocol {
     }
     
     private func subviewsModel() -> RFTabBarUI {
-        return RFTabBarUI(tabTitleSelectedColor: tabTitleSelectedColor, tabTitleUnSelectedColor: tabTitleUnSelectedColor, tabUnderlineColor: tabUnderlineColor, tabUnderlineHeight: tabUnderlineHeight, tabFont: tabFont)
+        return RFTabBarUI(tabTitleSelectedColor: tabTitleSelectedColor, tabTitleUnSelectedColor: tabTitleUnSelectedColor, tabUnderlineColor: tabUnderlineColor, tabUnderlineHeight: tabUnderlineHeight)
     }
     
     private func addSubViews() {
@@ -84,6 +83,7 @@ open class RFTabbedViewController: UIViewController, TabTapProtocol {
         var imagesSelected = [UIImage]()
         var imagesUnselected = [UIImage]()
         var titles = [String]()
+        var fonts = [UIFont]()
         
         for tab in tabsItems {
             if let selected = tab.iconSelected {
@@ -94,13 +94,14 @@ open class RFTabbedViewController: UIViewController, TabTapProtocol {
             }
             titles.append(tab.title)
             vcsIDs.append(tab.vcID)
+            fonts.append(tab.font)
         }
         
-        add(imagesSelected: imagesSelected, imagesUnselected: imagesUnselected, titles: titles)
+        add(imagesSelected: imagesSelected, imagesUnselected: imagesUnselected, titles: titles, fonts: fonts)
     }
     
-    private func add(imagesSelected: [UIImage], imagesUnselected: [UIImage], titles: [String]) {
-        tabView.add(iconsSelected: imagesSelected, iconsUnselected: imagesUnselected, titles: titles)
+    private func add(imagesSelected: [UIImage], imagesUnselected: [UIImage], titles: [String], fonts: [UIFont]) {
+        tabView.add(iconsSelected: imagesSelected, iconsUnselected: imagesUnselected, titles: titles, fonts: fonts)
         setupSubViews()
         tabView.delegate = self
         showChildVC(withName: vcsIDs.first)

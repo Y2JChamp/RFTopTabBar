@@ -13,11 +13,13 @@ public class RFTabItem {
     private (set) var iconUnselected: UIImage?
     private (set) var title: String
     private (set) var vcID: String
+    private (set) var font: UIFont
     
-    public init(iconSelected: UIImage? = nil, iconUnselected: UIImage? = nil, title: String, vcID: String) {
+    public init(iconSelected: UIImage? = nil, iconUnselected: UIImage? = nil, title: String, vcID: String, font: UIFont = .systemFont(ofSize: 18)) {
         self.iconSelected = iconSelected
         self.iconUnselected = iconUnselected
         self.title = title
         self.vcID = vcID
+        self.font = font
     }
 }
