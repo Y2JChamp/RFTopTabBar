@@ -72,7 +72,7 @@ open class RFTabbedViewController: UIViewController, TabTapProtocol {
         view.addConstraints([top, left, right, bottom])
     }
     
-    func add(tabsItems: [RFTabItem]) {
+    public func add(tabsItems: [RFTabItem]) {
         guard tabsItems.count > 0 else {
             return
         }
