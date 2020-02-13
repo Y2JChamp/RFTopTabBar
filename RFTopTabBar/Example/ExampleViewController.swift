@@ -13,13 +13,16 @@ class ExampleViewController: RFTabbedViewController {
     override func viewDidLoad() {
 
         // Configuration
-        let tab1 = RFTabItem(title: "Prova1", vcID: "Prova1", font: .italicSystemFont(ofSize: 15))
-        let tab2 = RFTabItem(title: "Prova2", vcID: "Prova2", font: .systemFont(ofSize: 12))
-        let tab3 = RFTabItem(title: "Prova3", vcID: "Prova3", font: .boldSystemFont(ofSize: 20))
+        let tab1 = RFTabItem(title: "Prova1", vcID: "Prova1")
+        let tab2 = RFTabItem(title: "Prova2", vcID: "Prova2")
+        let tab3 = RFTabItem(title: "Prova3", vcID: "Prova3")
 //        let tab1 = RFTabItem(title: "Prova1", vcID: "Prova1")
 //        let tab2 = RFTabItem(title: "Prova2", vcID: "Prova2")
 //        let tab3 = RFTabItem(title: "Prova3", vcID: "Prova3")
         let tabs = [tab1, tab2, tab3, tab2]
+        
+        // Font
+        fonts = RFFont(normal: .systemFont(ofSize: 12), highlighted: .boldSystemFont(ofSize: 20))
         add(tabsItems: tabs)
         super.viewDidLoad()
     }

@@ -18,14 +18,14 @@ class RFTopTabBarView: UIView {
     private var iconsSelected = [UIImage]()
     private var iconsUnselected = [UIImage]()
     private var titles = [String]()
-    private var fonts = [UIFont]()
+    private var fonts: RFFont!
     private var model: RFTabBarUI!
     
     private var underlineView: UIView!
     
     weak var delegate: TabTapProtocol?
     
-    final func add(iconsSelected: [UIImage] = [], iconsUnselected: [UIImage] = [], titles: [String], fonts: [UIFont]) {
+    final func add(iconsSelected: [UIImage] = [], iconsUnselected: [UIImage] = [], titles: [String], fonts: RFFont) {
         self.iconsSelected = iconsSelected
         self.iconsUnselected = iconsUnselected
         self.titles = titles
@@ -46,17 +46,18 @@ class RFTopTabBarView: UIView {
         for tab in tabs {
             if index == 0 {
                 tab.titleColor = model.tabTitleSelectedColor
+                tab.titleFont = fonts.highlighted
                 if iconsSelected.count > index {
                     tab.iconImg = iconsSelected[index]
                 }
             }
             else {
                 tab.titleColor = model.tabTitleUnSelectedColor
+                tab.titleFont = fonts.normal
                 if iconsUnselected.count > index {
                     tab.iconImg = iconsUnselected[index]
                 }
             }
-            tab.titleFont = fonts[index]
             tab.titleString = titles[index]
             index += 1
         }
@@ -139,6 +140,7 @@ class RFTopTabBarView: UIView {
     @objc func handleTabTap(_ sender: UITapGestureRecognizer) {
         if let tab = sender.view as? RFTabView, let index = tabs.firstIndex(of: tab), let d = delegate {
             tab.titleColor = model.tabTitleSelectedColor
+            tab.titleFont = fonts.highlighted
             if iconsSelected.count > index {
                 tab.iconImg = iconsSelected[index]
             }
@@ -153,6 +155,7 @@ class RFTopTabBarView: UIView {
         for t in tabs {
             if t != tab {
                 t.titleColor = model.tabTitleUnSelectedColor
+                t.titleFont = fonts.normal
                 if iconsUnselected.count > index {
                     t.iconImg = iconsUnselected[index]
                 }

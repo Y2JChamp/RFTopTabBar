@@ -9,7 +9,9 @@
 import UIKit
 
 open class RFTabbedViewController: UIViewController, TabTapProtocol {
-
+    
+    var fonts = RFFont(normal: .systemFont(ofSize: 18), highlighted: .boldSystemFont(ofSize: 18))
+    
     private lazy var tabView: RFTopTabBarView = {
         return RFTopTabBarView()
     }()
@@ -98,10 +100,10 @@ open class RFTabbedViewController: UIViewController, TabTapProtocol {
             fonts.append(tab.font)
         }
         
-        add(imagesSelected: imagesSelected, imagesUnselected: imagesUnselected, titles: titles, fonts: fonts)
+        add(imagesSelected: imagesSelected, imagesUnselected: imagesUnselected, titles: titles)
     }
     
-    private func add(imagesSelected: [UIImage], imagesUnselected: [UIImage], titles: [String], fonts: [UIFont]) {
+    private func add(imagesSelected: [UIImage], imagesUnselected: [UIImage], titles: [String]) {
         tabView.add(iconsSelected: imagesSelected, iconsUnselected: imagesUnselected, titles: titles, fonts: fonts)
         setupSubViews()
         tabView.delegate = self
