@@ -52,8 +52,8 @@ open class RFTabbedViewController: UIViewController, TabTapProtocol {
     }
     
     private func addSubViews() {
-        view.addSubview(tabView)
         view.addSubview(containerView)
+        view.addSubview(tabView)
     }
     
     private func setupTabBar() {
@@ -106,6 +106,7 @@ open class RFTabbedViewController: UIViewController, TabTapProtocol {
     private func add(imagesSelected: [UIImage], imagesUnselected: [UIImage], titles: [String]) {
         tabView.add(iconsSelected: imagesSelected, iconsUnselected: imagesUnselected, titles: titles, fonts: fonts)
         setupSubViews()
+        tabView.backgroundColor = view.backgroundColor
         tabView.delegate = self
         showChildVC(withName: vcsIDs.first)
     }
